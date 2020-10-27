@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #674bb1;
+  background-image: url(./images/bg-desktop.svg);
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+#header-container, 
+#body-container, 
+#footer-container {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#header-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#header-container .logo img {
+  width: 200px;
+}
+
+/*-----------------*/
+
+#body-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+#body-container .content {
+  flex: 1;
+  margin-left: 140px
+}
+
+#body-container .mockups img {
+  width: 600px;
+}
+
+#body-container .content .content-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  margin-top: 40px
+}
+
+#body-container .content-description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #dac8ff;
+  margin-bottom: 20px;
+}
+
+#body-container .content a {
+  text-decoration: none;
+  color: #9284c1;
+  font-size: 25px;
+
+  display: inline-block;
+
+  background-color: #ffffff;
+  padding: 10px 40px;
+
+  border-radius: 30px;
+}
+
+#body-container .content a:hover {
+  background-color: #dac8ff;
+  transition: background-color 0.2s
+}
+
+/*-----------------*/
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  align-items: center;
+}
+
+#footer-container .credits {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#footer-container .icons img{
+  width: 40px;
+  margin-right: 5px;
+}
+
+/*-------------------*/
+
+@media (max-width: 800px) {
+  body { 
+    background-position: center center;  
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+
+  #header-container .logo {
+    display: flex;
+    justify-content: center;
+  }
+  #header-container .logo img {
+    width: 150px;
+  }
+
+  #body-container .content {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #body-container .content .content-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #body-container .content .content-description {
+    text-align: center;
+  }
+
+  #body-container .mockups img {
+    width: 500px;
+  }
+
+  #footer-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #footer-container .credits {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  #body-container .mockups img {
+    width:300px;
+  }
+}
