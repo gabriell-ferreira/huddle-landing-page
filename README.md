@@ -34,6 +34,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Landing page criada como desafio/exercício para o [@Frontend Mentor](https://www.frontendmentor.io/dashboard) utilizando somente HTML5 e CSS3.
 
+Link: https://gabriell-ferreira.github.io/huddle-landing-page/
+
 ## 🔖 Layout
 
 No link abaixo você encontra o layout do projeto junto com todos os assets e guias para realização do desafio.
